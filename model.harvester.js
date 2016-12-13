@@ -1,5 +1,5 @@
-let harvester = {
-  ROLE: 'harvester',
-};
+var Creep = require( 'model.creep' );
 
-module.exports = harvester;
+module.exports = _.extend( Creep.prototype, {
+  ROLE: 'harvester'
+});

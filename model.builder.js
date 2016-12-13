@@ -1,8 +1,5 @@
-let builder = {
-  ROLE: 'builder',
-  all: () => {
-    return _.filter( Game.creeps, (creep) => creep.memory.role == this.ROLE )
-  }
-}
+var Creep = require( 'model.creep' );
 
-module.exports = harvester;
+module.exports = _.extend( Creep.prototype, {
+  ROLE: 'builder'
+});

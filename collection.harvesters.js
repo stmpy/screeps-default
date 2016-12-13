@@ -1,4 +1,4 @@
-Harvester = require('model.harvester');
+Harvester = require( 'model.harvester' );
 
 let harvesters = {
   model: Harvester,
