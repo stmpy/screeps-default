@@ -1,0 +1,8 @@
+#!/bin/sh
+
+[ $DEBUG ] && echo "npm: $(which npm)"
+
+npm install
+
+[ $DEBUG ] && echo "running command: $@ ..."
+exec "$@"
